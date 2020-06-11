@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>뚫어보셈 ㅋ</p>
+    
+</head>
+<body>
+    <h1 style="font-size: 4em;">로그인 폼 예시</h1>
+
+    <h1>아이디</h1>
+
+    <form id="idform">
+        <input type="pass" name="id" id="password" placeholder="아이디를 입력해주세요...">
+    </form>
+
+    <h1>패스워드</h1>
+
+    <form id="passform">
+        <input type="password" name="pass" id="ID" placeholder="비밀번호를 입력해주세요...">
+    </form>
+    <br>
+    <br>
+
+    <button id="submit">로그인</button>
+
+    <!--JAVASCRIPT START-->
+    <script> //JS
+        document.getElementById('submit').onclick = function() {
+            var id = document.getElementById('ID').value;
+            var pass = document.getElementById('password').value;
+            if (id === "shining0721 " && pass === "12345678") {
+                alert("로그인 성공!");
+                var make;
+                make = new make;
+                
+                var div = document.createElement('div');
+                document.body.appendChild(div);
+                div.style.stroke = "3px"
+                div.style.width = "100vw";
+                div.style.height = "100vh";
+                var text = document.createElement('p');
+                div.appendChild(text);
+                text.textContent = "ㅊㅋ! 캡쳐해서 보내주면 주소 알려줌";
+            }
+            else {
+                alert("로그인 실패!");
+                location.reload();
+            }
+        }
+        var time = new Date;
+        if (time.getHours() >= 21 & time.getMinutes() >= 30) {
+            alert("시간이 종료되었습니다!!! ㅊㅋㅊㅋ");
+        }
+        
+    </script>
+</body>
+</html>
